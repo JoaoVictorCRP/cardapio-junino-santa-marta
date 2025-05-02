@@ -2,11 +2,11 @@
 const candidatosCasal = [
     {
         nome: 'Miguel',
-        foto: 'miguel.jpeg',
+        foto: './images/miguel.jpeg',
     },
     {
         nome: 'Cecília',
-        foto: 'cecilia.jpeg',
+        foto: './images/cecilia.jpeg',
     },
     {
         nome: 'CONTINUAR',
