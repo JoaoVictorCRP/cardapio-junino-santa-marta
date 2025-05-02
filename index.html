@@ -3,295 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arraiá da Comunidade Santa Marta</title>
+    <title>Comunidade Santa Marta</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <!-- FontAwesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Cabeçalho: nome, saudação, pode inserir logo se quiser -->
     <header>
         <div class="container">
-            <h1>Arraiá da Comunidade Santa Marta</h1>
-            <p class="subtitle">Venha se divertir na nossa festa junina!</p>
-            <div class="event-info">
-                <p><i class="fas fa-calendar"></i> <span id="data-evento">14 Junho de 2025</span></p>
-                <p><i class="fas fa-clock"></i> <span id="horario-evento">A partir das 19h</span></p>
-                <p><i class="fas fa-map-marker-alt"></i> <span id="local-evento">Comunidade Santa Marta</span></p>
-            </div>
+            <h1>Comunidade Santa Marta</h1>
+            <p class="subtitle">Bem-vindo ao portal oficial da nossa comunidade!</p>
         </div>
     </header>
 
+    <!-- Menu principal SPA. Cada link alterna uma seção -->
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#competicoes">Competições</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#comunidade">Comunidade</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <div class="container nav-container">
+            <ul id="main-menu">
+                <li><a href="#home" data-section="home">Início</a></li>
+                <li><a href="#historia" data-section="historia">Nossa História</a></li>
+                <li><a href="#galeria" data-section="galeria">Galeria</a></li>
+                <li><a href="#programacao" data-section="programacao">Programação</a></li>
+                <li><a href="#eventos" data-section="eventos">Eventos</a></li>
+                <li><a href="#contato" data-section="contato">Contato</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <section id="inicio" class="container section">
-            <h2>Bem-vindo ao nosso Arraiá!</h2>
-            <div class="highlights">
-                <div class="highlight-card">
-                    <i class="fas fa-guitar"></i>
-                    <h3>Músicas Típicas</h3>
-                    <p>Forró, quadrilha e muita animação</p>
-                </div>
-                <div class="highlight-card">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Comidas Típicas</h3>
-                    <p>Delícias da culinária junina</p>
-                </div>
-                <div class="highlight-card">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Concurso Casal da Festa</h3>
-                    <p>Competição entre as crianças da comunidade</p>
-                </div>
-            </div>
-            <div class="countdown">
-                <h3>Contagem Regressiva</h3>
-                <div id="countdown-timer">
-                    <div class="countdown-item">
-                        <span id="days">00</span>
-                        <span>Dias</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="hours">00</span>
-                        <span>Horas</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="minutes">00</span>
-                        <span>Minutos</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="seconds">00</span>
-                        <span>Segundos</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ÁREA PRINCIPAL SPA: cada seção é uma "tela", gerenciadas via JS e visíveis uma a cada vez -->
+    <main id="main-content">
 
-        <section id="competicoes" class="container section">
-            <h2>Competições</h2>
-            
-            <div class="competition-tabs">
-                <button class="tab-button active" onclick="openTab('casal')">Casal Junino</button>
+      <!-- INÍCIO (Home) -->
+      <section id="home" class="spa-section active">
+        <div class="container section">
+            <!-- Bloco de Notícias/Avisos: aparece se houver notícia, preenchido pelo JS -->
+            <div id="news-block" style="display:none;">
+                <!-- Preenchido dinamicamente -->
             </div>
-            
-            <div id="casal" class="tab-content active">
-                <h3>Candidatos a Casal Junino</h3>
-                <div class="participants">
-                    <!-- Candidatos serão adicionados dinamicamente pelo JavaScript -->
+
+            <!-- Cards de Acesso às áreas principais -->
+            <div class="home-cards-grid">
+                <div class="home-card" data-section="historia">
+                    <i class="fas fa-book"></i>
+                    <h3>Nossa História</h3>
+                    <p>Conheça a trajetória e os marcos da nossa comunidade.</p>
                 </div>
-                <div class="competition-info">
-                    <h4>Como Funciona a Competição</h4>
-                    <p>Competição entre as crianças da comunidade. O vencedor é aquele que vender mais bandeirinhas, contamos com o apoio de todos vocês!!</p>
+                <div class="home-card" data-section="galeria">
+                    <i class="fas fa-camera"></i>
+                    <h3>Galeria de Fotos</h3>
+                    <p>Confira os principais momentos em registros fotográficos.</p>
+                </div>
+                <div class="home-card" data-section="programacao">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Programação</h3>
+                    <p>Veja a agenda de eventos religiosos, encontros e celebrações.</p>
+                </div>
+                <div class="home-card" data-section="eventos">
+                    <i class="fas fa-flag"></i>
+                    <h3>Eventos</h3>
+                    <p>Detalhes dos eventos e festas da comunidade, incluindo o Arraiá.</p>
+                </div>
+                <div class="home-card" data-section="contato">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Contato</h3>
+                    <p>Encontre endereço, telefone e WhatsApp da comunidade.</p>
                 </div>
             </div>
 
-         
-        </section>
+            <!-- Próximo Evento em destaque (contagem regressiva) -->
+            <div id="next-event-block">
+                <!-- Preenchido dinamicamente via JS -->
+            </div>
+        </div>
+      </section>
 
-        <section id="cardapio" class="container section">
-            <h2>Cardápio e Preços</h2>
-            
-            <div class="menu-categories">
-                <button class="menu-button active" onclick="showMenu('comidas')">Comidas</button>
-                <button class="menu-button" onclick="showMenu('bebidas')">Bebidas</button>
-                <button class="menu-button" onclick="showMenu('doces')">Doces</button>
-            </div>
-            
-            <div id="comidas" class="menu-items active">
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Canjica</h3>
-                        <p>Tradicional canjica com leite condensado e canela</p>
-                    </div>
-                    <div class="menu-item-price">EM BREVE</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Pamonha</h3>
-                        <p>Pamonha caseira doce ou salgada</p>
-                    </div>
-                    <div class="menu-item-price">R$ 7,00</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Milho Cozido</h3>
-                        <p>Espiga de milho cozida</p>
-                    </div>
-                    <div class="menu-item-price">R$ 5,00</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Cachorro-Quente</h3>
-                        <p>Com molho, batata palha e milho</p>
-                    </div>
-                    <div class="menu-item-price">R$ 10,00</div>
-                </div>
-            </div>
-            
-            <div id="bebidas" class="menu-items">
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Quentão</h3>
-                        <p>Tradicional ou sem álcool</p>
-                    </div>
-                    <div class="menu-item-price">R$ 8,00</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Vinho Quente</h3>
-                        <p>Com especiarias e frutas</p>
-                    </div>
-                    <div class="menu-item-price">R$ 8,00</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Refrigerante</h3>
-                        <p>Lata (diversos sabores)</p>
-                    </div>
-                    <div class="menu-item-price">R$ 5,00</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Água</h3>
-                        <p>Garrafa 500ml</p>
-                    </div>
-                    <div class="menu-item-price">R$ 3,00</div>
-                </div>
-            </div>
-            
-            <div id="doces" class="menu-items">
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Pé de Moleque</h3>
-                        <p>Tradicional com amendoim</p>
-                    </div>
-                    <div class="menu-item-price">R$ 4,00</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Cocada</h3>
-                        <p>Branca ou com chocolate</p>
-                    </div>
-                    <div class="menu-item-price">R$ 4,00</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Maçã do Amor</h3>
-                        <p>Maçã caramelizada</p>
-                    </div>
-                    <div class="menu-item-price">R$ 6,00</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-info">
-                        <h3>Bolo de Milho</h3>
-                        <p>Fatia de bolo caseiro</p>
-                    </div>
-                    <div class="menu-item-price">R$ 5,00</div>
-                </div>
-            </div>
-            
-            <div class="payment-info">
-                <h4>Formas de Pagamento</h4>
-                <p>Aceitamos dinheiro, PIX e cartões de débito e crédito.</p>
-                <div class="payment-icons">
-                    <i class="fas fa-money-bill-wave"></i>
-                    <i class="fas fa-credit-card"></i>
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-            </div>
-        </section>
+      <!-- NOSSA HISTÓRIA -->
+      <section id="historia" class="spa-section">
+        <div class="container section">
+          <h2>Nossa História</h2>
+          <!-- Linha do tempo histórica, JS preenche esse bloco -->
+          <div id="timeline"></div>
+        </div>
+      </section>
 
-        <section id="comunidade" class="container section">
-            <h2>Comunidade Santa Marta</h2>
-            
-            <div class="community-info">
-                <div class="community-text">
-                    <h3>Sobre Nossa Comunidade</h3>
-                    <p>A Comunidade Santa Marta é um espaço de fé, cultura e convivência que há [X] anos reúne famílias e promove o bem-estar social em nossa região.</p>
-                    <p>Nossa missão é fortalecer os laços comunitários através de eventos culturais, ações sociais e celebrações que valorizam nossas tradições.</p>
-                    
-                    <h3>Atividades Regulares</h3>
-                    <ul>
-                        <li>Celebração Eucarística - Todos os 1º e 3º domingos</li>
-                        <li>Celebração da Palavra - Todos os 2º, 4º e 5º domingos</li>
-                        <li>Grupo de Oração - Todas as 3ª às 19:30 </li>
-                        <li>Terço do Homens - Todas as 2ª ás 19:45</li>
-                        <li>Mil Ave Marias - Terceiro sábado do mês às 12h</li>
-                        <li>Catequese - Quarta e Quinta (Entre em contato para mais informações)</li>
-                    </ul>
-                </div>
-                
-                <div class="community-image">
-                    <img src="./images/imagem-santa.jpeg" alt="Comunidade Santa Marta">
-                </div>
-            </div>
-            
-            <div class="community-gallery">
-                <h3>Galeria de Fotos</h3>
-                <div class="gallery-images">
-                    <img src="./images/criancas-comunidade.png" alt="Foto Comunidade 1">
-                    <img src="./images/comunidade.jpeg" alt="Foto Comunidade 2">
-                    <img src="./images/criancas2.jpeg" alt="Foto Comunidade 3">
-                    <img src="./images/canto.jpg" alt="Foto Comunidade 4">
-                    <img src="./images/comunidade2.jpeg" alt="Foto Comunidade 4">
-                </div>
-            </div>
-        </section>
+      <!-- GALERIA DE FOTOS -->
+      <section id="galeria" class="spa-section">
+        <div class="container section">
+          <h2>Galeria de Fotos</h2>
+          <!-- Filtros dinâmicos para tópicos da galeria -->
+          <div id="gallery-filters"></div>
+          <!-- Aqui ficam as imagens da categoria selecionada -->
+          <div id="gallery-grid"></div>
+        </div>
+        <!-- Modal para exibir foto ampliada -->
+        <div id="gallery-modal" style="display:none;">
+          <span id="modal-close">&times;</span>
+          <img id="modal-img" src="" alt="Foto ampliada">
+          <div id="modal-caption"></div>
+        </div>
+      </section>
 
-        <section id="contato" class="container section">
-            <h2>Contato</h2>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Informações de Contato</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Endereço: <span id="endereco-comunidade">Rua Belém, 1601 - Jd. Brasilândia - Franca/SP</span></p>
-                    <!--TIRAR COMENTÁRIO PARA VOLTAR INFORMÇÃOES<p><i class="fas fa-phone"></i> Telefone: <span id="telefone-comunidade">(00) 00000-0000</span></p>
-                    <p><i class="fas fa-envelope"></i> Email: <span id="email-comunidade">contato@comunidadesantamarta.org</span></p>
-                    -->
-                    <!--<div class="social-media">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a> -->
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Envie uma Mensagem</h3>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Enviar Mensagem</button>
-                    </form>
-                </div>
+      <!-- PROGRAMAÇÃO (HORÁRIOS/AGENDA) -->
+      <section id="programacao" class="spa-section">
+        <div class="container section">
+          <h2>Programação</h2>
+          <!-- Tabela/lista dinâmica dos eventos rotineiros e especiais -->
+          <div id="schedule-list"></div>
+        </div>
+      </section>
+
+      <!-- EVENTOS -->
+      <section id="eventos" class="spa-section">
+        <div class="container section">
+          <h2>Eventos</h2>
+          <!-- Cards/lista dos eventos (festa, tríduo, etc) -->
+          <div id="event-list"></div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="spa-section">
+        <div class="container section">
+          <h2>Contato</h2>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Endereço: <span>Rua Belém, 1601 - Jd. Brasilândia - Franca/SP</span></p>
+            <p><i class="fas fa-phone"></i> Telefone: <span>(16) 99999-9999</span></p>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp: <span><a href="https://wa.me/5516999999999" >Fale Conosco</a></span></p>
+            <p><i class="fas fa-envelope"></i> E-mail: <span>contato@comunidadesantamarta.org</span></p>
+            <!-- Basta destravar abaixo se quiser links sociais -->
+            <!--
+            <div class="social-media">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
             </div>
-        </section>
+            -->
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Rodapé fixo com créditos -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Comunidade Santa Marta - Todos os direitos reservados</p>
-            <p>Desenvolvido com <i class="fas fa-heart"></i> para nossa comunidade</p>
+            <p>Feito com <i class="fas fa-heart"></i> por e para a comunidade</p>
         </div>
     </footer>
-
+    <!-- Carregue o JS ao final do body -->
     <script src="./js/index.js"></script>
 </body>
 </html>
