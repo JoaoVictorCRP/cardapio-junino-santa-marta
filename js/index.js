@@ -10,7 +10,7 @@ const candidatosCasal = [
     },
     {
         nome: 'CONTINUAR',
-        foto: 'https://via.placeholder.com/300x400',
+        foto: 'https://images.icon-icons.com/933/PNG/512/ellipsis_icon-icons.com_72770.png',
         descricao: 'CONTINUAR'
     }
 ];
