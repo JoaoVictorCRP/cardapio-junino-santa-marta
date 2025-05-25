@@ -1,5 +1,4 @@
 import Header from "./components/Header";
-import Navbar from "@/app/components/Navbar";
 import Section from "@/app/components/Section";
 import Card from "@/app/components/Card";
 import { FaBook, FaCamera, FaCalendarAlt, FaFlag, FaEnvelope } from "react-icons/fa";
@@ -8,8 +7,8 @@ export default function Home() {
   return (
     <div>
       <Header/>
-      <Navbar/>
       <Section>
+          <h1 className="text-center"> Em construção! ⚒️</h1>
           <div className="flex">
               <Card
                   icon={<FaBook size={50} color={"#d32f2f"}/>}
