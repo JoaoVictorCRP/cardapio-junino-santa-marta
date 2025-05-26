@@ -1,6 +1,6 @@
 import Header from "./components/Header";
-import Section from "@/app/components/Section";
-import Card from "@/app/components/Card";
+import Section from "./components/Section";
+import Card from "./components/Card";
 import { FaBook, FaCamera, FaCalendarAlt, FaFlag, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
