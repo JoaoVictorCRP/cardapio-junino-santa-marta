@@ -3,6 +3,7 @@ import Section from "./components/Section";
 import Card from "./components/Card";
 import { FaBook, FaCamera, FaCalendarAlt, FaFlag, FaEnvelope } from "react-icons/fa";
 
+
 export default function Home() {
   return (
     <div>
