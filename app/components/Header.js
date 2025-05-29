@@ -26,40 +26,6 @@ export default function Header() {
                     </p>
                 </div>
 
-                <nav className="hidden lg:block"> {/* Esconde em telas pequenas/médias, mostra em telas grandes */}
-                    <ul className="flex space-x-8">
-                        <li>
-                            <Link href="/" className="text-text-color hover:text-secondary font-semibold transition-colors duration-200">
-                                Início
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/nossa-historia" className="text-text-color hover:text-secondary font-semibold transition-colors duration-200">
-                                Nossa História
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/galeria" className="text-text-color hover:text-secondary font-semibold transition-colors duration-200">
-                                Galeria
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/programacao" className="text-text-color hover:text-secondary font-semibold transition-colors duration-200">
-                                Programação
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/eventos" className="text-text-color hover:text-secondary font-semibold transition-colors duration-200">
-                                Eventos
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/contato" className="text-text-color hover:text-secondary font-semibold transition-colors duration-200">
-                                Contato
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
 
                 <button className="lg:hidden text-text-color text-2xl">
                     <CgMenu/>

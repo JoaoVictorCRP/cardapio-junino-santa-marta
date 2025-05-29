@@ -9,38 +9,65 @@ export default function Home() {
     <div>
       <Header/>
       <Section>
-          <h1 className="text-center"> Em construção! ⚒️</h1>
+          <h1 className="text-center"> Cardápio Junino - Comunidade Santa Marta</h1>
+          <p className="text-center">Confira aqui nossas deliciosas prendas!</p>
+
+          <h3 className="text-2xl text-center pt-5">Comidas</h3>
+          <div className="flex pb-10">
+              <Card
+                  icon={<p className="text-6xl">?</p>}
+                  title="Pamonha e Curau"
+                  description="Delícias de milho verde, doces e salgadas, perfeitas para saborear a festa junina."
+              />
+
+              <Card
+                  icon={<p className="text-6xl">?</p>}
+                  title="Bolo de Milho e Fubá"
+                  description="Receitas caseiras que trazem o sabor autêntico do milho para sua mesa junina."
+              />
+
+              <Card
+                  icon={<p className="text-6xl">?</p>}
+                  title="Pipoca e Amendoim"
+                  description="Os clássicos que não podem faltar: pipoca fresquinha e amendoim torrado."
+              />
+
+              <Card
+                  icon={<p className="text-6xl">?</p>}
+                  title="Cachorro-Quente Junino"
+                  description="Uma versão especial do cachorro-quente, com temperos e acompanhamentos caipiras."
+              />
+
+          </div>
+
+          <h3 className="text-2xl text-center">Bebidas Típicas</h3>
           <div className="flex">
               <Card
-                  icon={<FaBook size={50} color={"#d32f2f"}/>}
-                  title="Nossa História"
-                  description="Conheça a trajetória e os marcos da nossa comunidade."
+                  icon={<p className="text-6xl">?</p>}
+                  title="Quentão e Vinho Quente"
+                  description="As bebidas que aquecem a alma e o corpo nas noites frias de São João."
               />
 
               <Card
-                  icon={<FaCamera size={50} color={"#d32f2f"}/>}
-                  title="Fotos"
-                  description="Confira os principais momentos em registros fotográficos."
+                  icon={<p className="text-6xl">?</p>}
+                  title="Chá de Amendoim"
+                  description="Uma bebida cremosa e saborosa, com o toque especial do amendoim."
               />
 
               <Card
-                  icon={<FaCalendarAlt size={50} color={"#d32f2f"}/>}
-                  title="Programação"
-                  description="Veja a agenda de eventos religiosos, encontros e celebrações."
+                  icon={<p className="text-6xl">?</p>}
+                  title="Bebidas Regionais"
+                  description="Descubra outras opções de bebidas tradicionais de festas juninas pelo Brasil."
               />
 
               <Card
-                  icon={<FaFlag size={50} color={"#d32f2f"}/>}
-                  title="Eventos"
-                  description="Detalhes dos eventos e festas da nossa comunidade."
+                  icon={<p className="text-6xl">?</p>}
+                  title="Refrigerantes e Água"
+                  description="Opções refrescantes para todos os gostos, para acompanhar as delícias juninas."
               />
 
-              <Card
-                  icon={<FaEnvelope size={50} color={"#d32f2f"}/>}
-                  title="Contato"
-                  description="Encontre endereço, telefone e WhatsApp da comunidade."
-              />
           </div>
+
 
       </Section>
     </div>

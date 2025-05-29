@@ -9,9 +9,9 @@ export default function Card(props) {
             </div>
             <div className="px-1">
                 <h3 className="text-xl font-bold text-secondary">{props.title}</h3>
+                <h5>Preço: R$5,00</h5>
                 <p className="text-xl font-medium">{props.description}</p>
             </div>
-
         </div>
     )
 }
