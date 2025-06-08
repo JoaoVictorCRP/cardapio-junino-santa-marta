@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Section from "./components/Section";
 import Card from "./components/Card";
 import Carousel from "@/app/components/Carousel";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,20 +15,24 @@ export default function Home() {
           <h3 className="text-2xl font-black text-center pt-5">COMIDAS</h3>
           <Carousel>
               {[
-                  <Card key={1} icon={<p className="text-6xl">?</p>} title="Pamonha"/>,
-                  <Card key={2} icon={<p className="text-6xl">?</p>} title="Bolo de Milho/Fubá"/>,
+                  <Card key={1} icon={
+                      <Image
+                        src={`${proccess.env.S3_BUCKET_URL}/pamonha.png`}
+                      />
+                  } title="Pamonha"/>,
+                  <Card key={2} icon={<p className="text-6xl">?</p>} title="Bolo de Milho"/>,
                   <Card key={3} icon={<p className="text-6xl">?</p>} title="Amendoim torrado"/>,
                   <Card key={4} icon={<p className="text-6xl">?</p>} title="Cachorro-Quente"/>,
+                  <Card key={4} icon={<p className="text-6xl">?</p>} title="Churrasco"/>,
               ]}
           </Carousel>
 
           <h3 className="text-2xl font-black text-center pt-5">BEBIDAS</h3>
           <Carousel>
               {[
-                  <Card key={1} icon={<p className="text-6xl">?</p>} title="Quentão e Vinho Quente"/>,
-                  <Card key={2} icon={<p className="text-6xl">?</p>} title="Chá de Amendoim"/>,
-                  <Card key={3} icon={<p className="text-6xl">?</p>} title="Bebidas Regionais"/>,
-                  <Card key={4} icon={<p className="text-6xl">?</p>} title="Coca"/>,
+                  <Card key={1} icon={<p className="text-6xl">?</p>} title="Quentão"/>,
+                  <Card key={2} icon={<p className="text-6xl">?</p>} title="Suco"/>,
+                  <Card key={3} icon={<p className="text-6xl">?</p>} title="Refrigerantes"/>,
                   <Card key={4} icon={<p className="text-6xl">?</p>} title="Água"/>,
               ]}
           </Carousel>
