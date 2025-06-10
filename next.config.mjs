@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: [],
+        domains: [
+            `${process.env.S3_DOMAIN}`
+        ],
     },
 };
 export default nextConfig;

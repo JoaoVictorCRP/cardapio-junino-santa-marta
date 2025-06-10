@@ -17,23 +17,82 @@ export default function Home() {
               {[
                   <Card key={1} icon={
                       <Image
-                        src={`${proccess.env.S3_BUCKET_URL}/pamonha.png`}
+                        src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/pamonha.png`}
+                        width={100}
+                        height={100}
+                        alt="Pamonha"
                       />
                   } title="Pamonha"/>,
-                  <Card key={2} icon={<p className="text-6xl">?</p>} title="Bolo de Milho"/>,
-                  <Card key={3} icon={<p className="text-6xl">?</p>} title="Amendoim torrado"/>,
-                  <Card key={4} icon={<p className="text-6xl">?</p>} title="Cachorro-Quente"/>,
-                  <Card key={4} icon={<p className="text-6xl">?</p>} title="Churrasco"/>,
+                  <Card key={2} icon={
+                      <Image
+                        src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/bolo-de-milho.png`}
+                        width={100}
+                        height={100}
+                        alt="Bolo de Milho"
+                      />
+                  } title="Bolo de Milho"/>,
+                  <Card key={3} icon={
+                      <Image
+                          src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/amendoim-torrado.png`}
+                          width={100}
+                          height={100}
+                          alt="Amendoim Torrado"
+                      />
+                  } title="Amendoim Torrado"/>,
+                  <Card key={4} icon={
+                      <Image
+                          src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/cachorro-quente.png`}
+                          width={100}
+                          height={100}
+                          alt="Cachorro Quente"
+                      />
+                  } title="Cachorro Quente"/>,
+                  <Card key={5} icon={
+                      <Image
+                          src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/churrasco.png`}
+                          width={100}
+                          height={100}
+                          alt="Churrasco"
+                      />
+                  } title="Churrasco"/>
               ]}
           </Carousel>
 
           <h3 className="text-2xl font-black text-center pt-5">BEBIDAS</h3>
           <Carousel>
               {[
-                  <Card key={1} icon={<p className="text-6xl">?</p>} title="Quentão"/>,
-                  <Card key={2} icon={<p className="text-6xl">?</p>} title="Suco"/>,
-                  <Card key={3} icon={<p className="text-6xl">?</p>} title="Refrigerantes"/>,
-                  <Card key={4} icon={<p className="text-6xl">?</p>} title="Água"/>,
+                  <Card key={1} icon={
+                      <Image
+                          src={`${process.env.S3_BUCKET_URL}/festa-junina/bebidas/quentao.png`}
+                          width={100}
+                          height={100}
+                          alt="Quentão"
+                      />
+                  } title="Quentão"/>,
+                  <Card key={2} icon={
+                      <Image
+                          src={`${process.env.S3_BUCKET_URL}/festa-junina/bebidas/sucos.png`}
+                          width={100}
+                          height={100}
+                          alt="Sucos"
+                      />
+                  } title="Sucos"/>,
+                  <Card key={3} icon={
+                      <Image
+                          src={`${process.env.S3_BUCKET_URL}/festa-junina/bebidas/refrigerantes.png`}
+                          width={100}
+                          height={100}
+                          alt="Refrigerantes"
+                      />
+                  } title="Refrigerantes"/>,
+                  <Card key={4} icon={
+                      <Image
+                          src={`${process.env.S3_BUCKET_URL}/festa-junina/bebidas/agua.png`}
+                          width={100}
+                          height={100}
+                          alt="Garrafa de Água"
+                      />
+                  } title="Água"/>,
               ]}
           </Carousel>
 
