@@ -196,14 +196,14 @@ export default function Home() {
                       src={`/sapatenis.png`}
                       width={100}
                       height={100}
-                      alt="Sapatênis"
+                      alt="Sapatênis feminino"
                   />
-              } title="Sapatênis" price="15,00"/>]}
+              } title="Sapato Feminino" price="15,00"/>]}
           </Carousel>
 
 
           <h3 className="text-2xl text-center font-black pt-5" id="pagamento">FORMAS DE PAGAMENTO</h3>
-          <div className="pb-10">
+          <div className="pb-3">
             <ul>
                 <li className="text-lg font-medium">✅ Cartão de Crédito</li>
                 <li className="text-lg font-medium">✅ Cartão de Débito</li>
@@ -212,13 +212,7 @@ export default function Home() {
             </ul>
 
             <h5 className="text-center font-bold text-secondary">Atenção!</h5>
-            <p>Ao optar pelo pagamento via PIX, você pode realizar o pagamento direto para a conta bancária da comunidade:</p>
-            <ul className="list-disc pl-5">
-                <li><b>Chave</b>: (16) 91111-1111</li>
-                <li><b>Beneficiada</b>: Elizabeth Santos Matias</li>
-                <li><b>Instituição</b>: Banco do Brasil</li>
-            </ul>
-            <p>Após realizar o pagamento, basta se dirigir a uma barraquinha e apresentar o comprovante ao caixa.</p>
+            <p className="text-center">Dirija-se ao Caixa para comprar suas fichas, com as fichas em mãos adquira em nossas barraquinhas sua opção favorita!</p>
           </div>
       </Section>
       <Footer/>
