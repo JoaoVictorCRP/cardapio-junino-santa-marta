@@ -38,7 +38,7 @@ export default function Home() {
                           height={100}
                           alt="Canjica"
                       />
-                  } title="Canjica"/>,
+                  } title="Canjica" price="8,00"/>,
                   <Card key={4} icon={
                       <Image
                           src={`/cachorro-quente.png`}
@@ -100,7 +100,7 @@ export default function Home() {
                           height={100}
                           alt="Quentão"
                       />
-                  } title="Quentão" price="2,00"/>,
+                  } title="Quentão" price="3,00"/>,
                   <Card key={2} icon={
                       <Image
                           src={`/sucos.png`}
