@@ -1,7 +1,6 @@
 "use client"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import {useRef} from "react";
 
 export default function Carousel({ children }) {
     const [sliderRef, slider] = useKeenSlider({

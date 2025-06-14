@@ -116,7 +116,7 @@ export default function Home() {
                           height={100}
                           alt="Refrigerantes"
                       />
-                  } title="Refrigerantes" price="3,00"/>,
+                  } title="Refrigerante" price="3,00"/>,
                   <Card key={4} icon={
                       <Image
                           src={`/agua.png`}

@@ -1,8 +1,8 @@
 export default function Card(props) {
     return (
         <div className={`flex flex-col justify-between border-4 border-t-primary border-b-secondary
-        border-l-smooth border-r-smooth rounded-sm text-center shadow-md px-3 py-5 ${props.className}`}>
-            <div className="flex items-center justify-center mb-3">
+        border-l-smooth border-r-smooth rounded-sm text-center shadow-md py-5 ${props.className}`}>
+            <div className="flex items-center justify-center mb-3 px-3">
                 {props.icon}
             </div>
 
