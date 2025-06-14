@@ -12,7 +12,7 @@ export default function Card(props) {
             </div>
 
             <div className="mt-3">
-                <h5 className="text-lg font-bold">Preço: R$5,00</h5>
+                <h5 className="text-lg font-bold">Preço: R${props.price || "5,00"}</h5>
             </div>
         </div>
     );
