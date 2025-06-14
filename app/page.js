@@ -3,6 +3,7 @@ import Section from "./components/Section";
 import Card from "./components/Card";
 import Carousel from "@/app/components/Carousel";
 import Image from "next/image";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
@@ -220,7 +221,7 @@ export default function Home() {
             <p>Após realizar o pagamento, basta se dirigir a uma barraquinha e apresentar o comprovante ao caixa.</p>
           </div>
       </Section>
-
+      <Footer/>
     </div>
   );
 }
