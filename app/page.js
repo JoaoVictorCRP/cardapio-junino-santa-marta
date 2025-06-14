@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className="text-center"> Catálogo Junino da Comunidade Santa Marta</h1>
           <p className="text-center">Confira aqui informações sobre nossas barraquinhas!</p>
 
-          <h3 className="text-2xl font-black text-center pt-5">COMIDAS</h3>
+          <h3 className="text-2xl font-black text-center pt-5" id="comidas">COMIDAS</h3>
           <Carousel>
               {[
                   <Card key={1} icon={
@@ -90,7 +90,7 @@ export default function Home() {
               ]}
           </Carousel>
 
-          <h3 className="text-2xl font-black text-center pt-5">BEBIDAS</h3>
+          <h3 className="text-2xl font-black text-center pt-5" id="bebidas">BEBIDAS</h3>
           <Carousel>
               {[
                   <Card key={1} icon={
@@ -136,7 +136,7 @@ export default function Home() {
               ]}
           </Carousel>
 
-          <h3 className="text-2xl font-black text-center pt-5">DIVERSÃO</h3>
+          <h3 className="text-2xl font-black text-center pt-5" id="diversao">DIVERSÃO</h3>
           <Carousel>
               {[<Card key={1} icon={
                   <Image
@@ -172,7 +172,7 @@ export default function Home() {
               } title="Pebolim" price="3,00"/>]}
           </Carousel>
 
-          <h3 className="text-2xl font-black text-center pt-5">ACESSÓRIOS</h3>
+          <h3 className="text-2xl font-black text-center pt-5" id="acessorios">ACESSÓRIOS</h3>
           <Carousel>
               {[<Card key={1} icon={
                   <Image
@@ -201,7 +201,7 @@ export default function Home() {
           </Carousel>
 
 
-          <h3 className="text-2xl text-center font-black pt-5">FORMAS DE PAGAMENTO</h3>
+          <h3 className="text-2xl text-center font-black pt-5" id="pagamento">FORMAS DE PAGAMENTO</h3>
           <div className="pb-10">
             <ul>
                 <li className="text-lg font-medium">✅ Cartão de Crédito</li>

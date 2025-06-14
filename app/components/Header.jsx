@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-import { CgMenu } from "react-icons/cg";
+import {CgClose, CgMenu} from "react-icons/cg";
+import {useState} from "react";
 
 export default function Header() {
     return (
@@ -26,10 +28,6 @@ export default function Header() {
                     </p>
                 </div>
 
-
-                <button className="lg:hidden text-text-color text-2xl">
-                    <CgMenu/>
-                </button>
             </div>
         </header>
     )
