@@ -138,7 +138,7 @@ export default function Home() {
 
           <h3 className="text-2xl font-black text-center pt-5">DIVERSÃO</h3>
           <Carousel>
-              <Card key={1} icon={
+              {[<Card key={1} icon={
                   <Image
                       src={`/estralinhos.png`}
                       width={100}
@@ -169,12 +169,12 @@ export default function Home() {
                       height={100}
                       alt="Pebolim"
                   />
-              } title="Pebolim" price="3,00"/>,
+              } title="Pebolim" price="3,00"/>]}
           </Carousel>
 
-          <h3 className="text-2xl font-black text-center pt-5">DIVERSOS</h3>
+          <h3 className="text-2xl font-black text-center pt-5">ACESSÓRIOS</h3>
           <Carousel>
-              <Card key={1} icon={
+              {[<Card key={1} icon={
                   <Image
                       src={`/bolsa.png`}
                       width={100}
@@ -189,7 +189,7 @@ export default function Home() {
                       height={100}
                       alt="Sapato"
                   />
-              } title="Sapato Masculino" price="30,00"/>
+              } title="Sapato Masculino" price="30,00"/>,
               <Card key={3} icon={
                   <Image
                       src={`/sapatenis.png`}
@@ -197,8 +197,9 @@ export default function Home() {
                       height={100}
                       alt="Sapatênis"
                   />
-              } title="Sapatênis" price="15,00"/>
+              } title="Sapatênis" price="15,00"/>]}
           </Carousel>
+
 
           <h3 className="text-2xl text-center font-black pt-5">FORMAS DE PAGAMENTO</h3>
           <div className="pb-10">
