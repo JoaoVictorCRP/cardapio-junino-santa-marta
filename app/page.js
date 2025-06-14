@@ -9,52 +9,84 @@ export default function Home() {
     <div>
       <Header/>
       <Section>
-          <h1 className="text-center"> Cardápio Junino da Comunidade Santa Marta</h1>
-          <p className="text-center">Confira aqui nossas deliciosas prendas!</p>
+          <h1 className="text-center"> Catálogo Junino da Comunidade Santa Marta</h1>
+          <p className="text-center">Confira aqui informações sobre nossas barraquinhas!</p>
 
           <h3 className="text-2xl font-black text-center pt-5">COMIDAS</h3>
           <Carousel>
               {[
                   <Card key={1} icon={
                       <Image
-                        src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/pamonha.png`}
+                        src={`/pacoca.png`}
                         width={100}
                         height={100}
-                        alt="Pamonha"
+                        alt="Paçoca"
                       />
-                  } title="Pamonha"/>,
+                  } title="Paçoca" price="1,00"/>,
                   <Card key={2} icon={
                       <Image
-                        src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/bolo-de-milho.png`}
+                        src={`/bolo-de-milho.png`}
                         width={100}
                         height={100}
-                        alt="Bolo de Milho"
+                        alt="Bolo"
                       />
-                  } title="Bolo de Milho"/>,
+                  } title="Bolo" price="4,00"/>,
                   <Card key={3} icon={
                       <Image
-                          src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/amendoim-torrado.png`}
+                          src={`/canjica.png`}
                           width={100}
                           height={100}
-                          alt="Amendoim Torrado"
+                          alt="Canjica"
                       />
-                  } title="Amendoim Torrado"/>,
+                  } title="Canjica"/>,
                   <Card key={4} icon={
                       <Image
-                          src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/cachorro-quente.png`}
+                          src={`/cachorro-quente.png`}
                           width={100}
                           height={100}
                           alt="Cachorro Quente"
                       />
-                  } title="Cachorro Quente"/>,
+                  } title="Cachorro Quente" price="8,00"/>,
                   <Card key={5} icon={
                       <Image
-                          src={`${process.env.S3_BUCKET_URL}/festa-junina/comidas/churrasco.png`}
+                          src={`/arroz-doce.png`}
                           width={100}
                           height={100}
-                          alt="Churrasco"
+                          alt="Arroz Doce"
                       />
-                  } title="Churrasco"/>
+                  } title="Arroz Doce" price="4,00"/>,
+                  <Card key={6} icon={
+                      <Image
+                          src={`/maca-do-amor.png`}
+                          width={100}
+                          height={100}
+                          alt="Maçã do Amor"
+                      />
+                  } title="Maçã do Amor"/>,
+                  <Card key={7} icon={
+                      <Image
+                          src={`/pipoca.png`}
+                          width={100}
+                          height={100}
+                          alt="Pipoca"
+                      />
+                  } title="Pipoca"/>,
+                  <Card key={8} icon={
+                      <Image
+                          src={`/caldo-de-mandioca.png`}
+                          width={100}
+                          height={100}
+                          alt="Caldo de Mandioca"
+                      />
+                  } title="Caldo de Mandioca" price="8,00"/>,
+                  <Card key={9} icon={
+                      <Image
+                          src={`/milho.png`}
+                          width={100}
+                          height={100}
+                          alt="Milho"
+                      />
+                  } title="Milho" price="5,00"/>,
               ]}
           </Carousel>
 
@@ -63,15 +95,15 @@ export default function Home() {
               {[
                   <Card key={1} icon={
                       <Image
-                          src={`${process.env.S3_BUCKET_URL}/festa-junina/bebidas/quentao.png`}
+                          src={`/quentao.png`}
                           width={100}
                           height={100}
                           alt="Quentão"
                       />
-                  } title="Quentão"/>,
+                  } title="Quentão" price="2,00"/>,
                   <Card key={2} icon={
                       <Image
-                          src={`${process.env.S3_BUCKET_URL}/festa-junina/bebidas/sucos.png`}
+                          src={`/sucos.png`}
                           width={100}
                           height={100}
                           alt="Sucos"
@@ -79,21 +111,65 @@ export default function Home() {
                   } title="Sucos"/>,
                   <Card key={3} icon={
                       <Image
-                          src={`${process.env.S3_BUCKET_URL}/festa-junina/bebidas/refrigerantes.png`}
+                          src={`/refrigerantes.png`}
                           width={100}
                           height={100}
                           alt="Refrigerantes"
                       />
-                  } title="Refrigerantes"/>,
+                  } title="Refrigerantes" price="3,00"/>,
                   <Card key={4} icon={
                       <Image
-                          src={`${process.env.S3_BUCKET_URL}/festa-junina/bebidas/agua.png`}
+                          src={`/agua.png`}
                           width={100}
                           height={100}
                           alt="Garrafa de Água"
                       />
                   } title="Água"/>,
+                  <Card key={5} icon={
+                      <Image
+                          src={`/cerveja.png`}
+                          width={100}
+                          height={100}
+                          alt="Cerveja"
+                      />
+                  } title="Cerveja" price="7,00"/>,
               ]}
+          </Carousel>
+
+          <h3 className="text-2xl font-black text-center pt-5">DIVERSÃO</h3>
+          <Carousel>
+              <Card key={1} icon={
+                  <Image
+                      src={`/estralinhos.png`}
+                      width={100}
+                      height={100}
+                      alt="Bombinhas de estralinhos"
+                  />
+              } title="Estralinhos"/>,
+              <Card key={2} icon={
+                  <Image
+                      src={`/pula-pula.png`}
+                      width={100}
+                      height={100}
+                      alt="Pula Pula"
+                  />
+              } title="Pula-Pula"/>,
+              <Card key={3} icon={
+                  <Image
+                      src={`/pesca.png`}
+                      width={100}
+                      height={100}
+                      alt="Barraca da Pesca"
+                  />
+              } title="Pesca"/>,
+              <Card key={4} icon={
+                  <Image
+                      src={`/pebolim.png`}
+                      width={100}
+                      height={100}
+                      alt="Pebolim"
+                  />
+              } title="Pebolim" price="3,00"/>,
           </Carousel>
 
           <h3 className="text-2xl text-center font-black pt-5">FORMAS DE PAGAMENTO</h3>
