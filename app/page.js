@@ -143,9 +143,9 @@ export default function Home() {
                       src={`/estralinhos.png`}
                       width={100}
                       height={100}
-                      alt="Bombinhas de estralinhos"
+                      alt="Bombinhas de estalinhos"
                   />
-              } title="Estralinhos"/>,
+              } title="Estalinhos" price="2,00"/>,
               <Card key={2} icon={
                   <Image
                       src={`/pula-pula.png`}
@@ -170,6 +170,34 @@ export default function Home() {
                       alt="Pebolim"
                   />
               } title="Pebolim" price="3,00"/>,
+          </Carousel>
+
+          <h3 className="text-2xl font-black text-center pt-5">DIVERSOS</h3>
+          <Carousel>
+              <Card key={1} icon={
+                  <Image
+                      src={`/bolsa.png`}
+                      width={100}
+                      height={100}
+                      alt="Bolsa"
+                  />
+              } title="Bolsa" price="15,00"/>,
+              <Card key={2} icon={
+                  <Image
+                      src={`/sapato-masculino.png`}
+                      width={100}
+                      height={100}
+                      alt="Sapato"
+                  />
+              } title="Sapato Masculino" price="30,00"/>
+              <Card key={3} icon={
+                  <Image
+                      src={`/sapatenis.png`}
+                      width={100}
+                      height={100}
+                      alt="Sapatênis"
+                  />
+              } title="Sapatênis" price="15,00"/>
           </Carousel>
 
           <h3 className="text-2xl text-center font-black pt-5">FORMAS DE PAGAMENTO</h3>
