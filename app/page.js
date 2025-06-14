@@ -70,7 +70,7 @@ export default function Home() {
                           height={100}
                           alt="Pipoca"
                       />
-                  } title="Pipoca"/>,
+                  } title="Pipoca" price="2,00"/>,
                   <Card key={8} icon={
                       <Image
                           src={`/caldo-de-mandioca.png`}
@@ -124,7 +124,7 @@ export default function Home() {
                           height={100}
                           alt="Garrafa de Água"
                       />
-                  } title="Água"/>,
+                  } title="Água" price="3,00"/>,
                   <Card key={5} icon={
                       <Image
                           src={`/cerveja.png`}
@@ -153,7 +153,7 @@ export default function Home() {
                       height={100}
                       alt="Pula Pula"
                   />
-              } title="Pula-Pula"/>,
+              } title="Pula-Pula" price="3,00"/>,
               <Card key={3} icon={
                   <Image
                       src={`/pesca.png`}
