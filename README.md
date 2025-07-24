@@ -16,10 +16,10 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/JoaoVictorCRP/cardapio-junino-santa-marta
 
 # 2. Acesse a pasta do projeto
-cd seu-repositorio
+cd cardapio-junino-santa-marta
 
 # 3. Instale as dependências
 npm install
